@@ -222,15 +222,12 @@ async def amireallyalive(alive):
     """ For .start command, check if the bot is running.  """
     logo = ALIVE_LOGO
     uptime = await get_readable_time((time.time() - StartTime))
-    output = (f"`🤖 STATUS: Remix is running ✅`\n"
-             f"`Telethon version`: {version.__version__} \n"
-             f"`Python version🐍`: {python_version()} \n"
-             f"`Bot Version🤘: Remix {BOT_VER}` \n"
-             f"==================================== \n"
-             f"`User 👨‍🚀`: {DEFAULTUSER} \n"
-             f"`Maintainer 🏄‍♂️`: @heyworld \n"
-             f"`Bot Uptime ⏱️`: {uptime} \n"
-             f"====================================\n")
+    output = (f"[Paimon](tg://openmessage?user_id=1486647366) is running...\n"
+             f"Py and Tle version: {python_version()}   |   {version.__version__} \n"
+             f"Bot Version: Remix {BOT_VER}-rogue.63 \n"
+             f"Maintainer: [Paimon](tg://openmessage?user_id=1486647366) \n"
+             f"Bot Uptime: {uptime} \n"
+             f"Powered by oub-remix\n"
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
