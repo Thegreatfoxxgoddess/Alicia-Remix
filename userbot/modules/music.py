@@ -83,7 +83,7 @@ async def _(event):
     await catmusic(str(query), "128k", event)
     l = glob.glob("./temp/*.mp3")
     if l:
-        await event.edit("yeah..! i found something wi8..🥰")
+        await event.edit("Downloading, Please wait...")
     else:
         await event.edit(f"Sorry..! i can't find anything with `{query}`")
         return
