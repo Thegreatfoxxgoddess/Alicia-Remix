@@ -27,7 +27,7 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 UNAPPROVED_MSG = (
-    "`HeY! Please don't spam. Wait for my master's approval 🙃\nMessage remaining:1 \n\n`")
+    "Hey there! Unfortunately, I don't accept private messages from strangers. Please contact me in a group. you will be blocked if you continue texting.\n\n If it is important and you wanna talk to me then get approval from [Kakashi](tg://user?id=1013414037)\n")
 # =================================================================
 
 NO_PM_LOG_USERS = []
@@ -76,10 +76,10 @@ async def permitpm(event):
                 else:
                     COUNT_PM[event.chat_id] = COUNT_PM[event.chat_id] + 1
 
-                if COUNT_PM[event.chat_id] > 3:
+                if COUNT_PM[event.chat_id] > 2:
                     await event.respond(
-                        "`You were spamming my pm dude.`\n"
-                        "`You have been BLOCKED and reported as SPAM now. LEAVE ME ALONE.`"
+                       "I told you I don't like PM \n"
+                       "you are now blocked and reported✨🦋\n"
                     )
 
                     try:
