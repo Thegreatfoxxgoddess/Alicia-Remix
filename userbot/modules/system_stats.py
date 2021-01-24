@@ -228,6 +228,7 @@ async def amireallyalive(alive):
              f"Maintainer: [Paimon](tg://openmessage?user_id=1486647366) \n"
              f"Bot Uptime: {uptime} \n"
              f"Powered by oub-remix\n"
+             )
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
