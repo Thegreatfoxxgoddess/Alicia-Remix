@@ -70,10 +70,10 @@ async def _(event):
         )
         image_mask[edges > 0.08] = 255
         wc = WordCloud(
-            max_words=2000,
+            max_words=2500,
             mask=image_mask,
-            max_font_size=40,
-            random_state=42,
+            max_font_size=35,
+            random_state=38,
             relative_scaling=0,
         )
         wc.generate(text)
