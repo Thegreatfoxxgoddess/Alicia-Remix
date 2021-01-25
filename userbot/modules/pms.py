@@ -27,7 +27,7 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 UNAPPROVED_MSG = (
-    "Hey there! you texted me without approval.\n\n talk to[Kakashi](tg://user?id=1013414037) to get approval for my pm\n")   
+    "Hey there! you texted me without approval.\n\n talk to[Kakashi](tg://user?id=1013414037) to get approval for my pm\n")  
 # =================================================================
 
 NO_PM_LOG_USERS = []
@@ -76,10 +76,10 @@ async def permitpm(event):
                 else:
                     COUNT_PM[event.chat_id] = COUNT_PM[event.chat_id] + 1
 
-                if COUNT_PM[event.chat_id] > 2:
+                if COUNT_PM[event.chat_id] > 3:
                     await event.respond(
-                       "you are now blocked and reported for spamming my pm ✨🦋\n"
-                       "have a nice day ✨✨😙\n"
+                      "you are now blocked and reported for spamming my pm ✨🦋\n"
+                      "have a nice day ✨✨😙\n"
                     )
 
                     try:
@@ -460,6 +460,7 @@ CMD_HELP.update({
 \nUsage: If you don't want chat logs than use `.nolog` , for opposite use `.log`. Default is .log enabled\nThis will now log chat msgs to your PM_LOGGR_BOT_API_ID.\
 \nnotice: now you can totally disable pm logs by adding heroku vars PM_LOGGR_BOT_API_ID by providing a valid group ID and NC_LOG_P_M_S True or False\
 \nwhere False means no pm logs at all..enjoy.. update and do add above mentioned vars."       
+})
 })
 OG_P_M_S True or False\
 \nwhere False means no pm logs at all..enjoy.. update and do add above mentioned vars."       
