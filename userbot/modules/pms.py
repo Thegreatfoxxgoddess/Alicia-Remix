@@ -461,7 +461,3 @@ CMD_HELP.update({
 \nnotice: now you can totally disable pm logs by adding heroku vars PM_LOGGR_BOT_API_ID by providing a valid group ID and NC_LOG_P_M_S True or False\
 \nwhere False means no pm logs at all..enjoy.. update and do add above mentioned vars."       
 })
-})
-OG_P_M_S True or False\
-\nwhere False means no pm logs at all..enjoy.. update and do add above mentioned vars."       
-})
